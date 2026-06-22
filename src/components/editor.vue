@@ -300,6 +300,8 @@
 <style scoped>
   .editor {
     height: 100%;
+    width: 100%;
+    position: relative;
   }
 
   .canvas {
@@ -315,36 +317,47 @@
   }
 
   .toolbar {
-    background-color: rgba(0, 0, 0, .5);
-    bottom: 1rem;
+    background: rgba(20, 20, 20, 0.75);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    bottom: 2rem;
     color: #fff;
-    height: 2rem;
+    height: 3rem;
     left: 50%;
-    margin-left: -8rem;
+    transform: translateX(-50%);
     position: absolute;
-    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    padding: 0 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     z-index: 2015;
   }
 
   .toolbar__button {
     background-color: transparent;
     border-width: 0;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
-    display: block;
-    float: left;
-    font-size: .875rem;
-    height: 2rem;
-    text-align: center;
-    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    margin: 0 0.15rem;
 
     &:focus {
       outline: none;
     }
 
     &:hover {
-      background-color: #0074d9;
+      background-color: rgba(255, 255, 255, 0.1);
       color: #fff;
+      transform: scale(1.08);
     }
   }
 </style>

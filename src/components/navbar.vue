@@ -7,7 +7,7 @@
       <button type="button" class="nav__button nav__button--danger" data-action="clear" title="Cancel (Esc)" v-if="data.cropping"><span class="fa fa-ban"></span></button>
       <button type="button" class="nav__button nav__button--success" data-action="crop" title="OK (Enter)" v-if="data.cropping"><span class="fa fa-check"></span></button>
       <a class="nav__button nav__button--success" title="Download" :download="data.name" :href="data.url" v-if="downloadable && data.loaded"><span class="fa fa-download"></span></a>
-      <a class="nav__button" href="https://github.com/fengyuanchen/photo-editor" title="View on GitHub"><span class="fa fa-github"></span></a>
+      <a class="nav__button" href="https://github.com/vijaymahes9080/Image-Editor-Project-PHP" target="_blank" title="View on GitHub"><span class="fa fa-github"></span></a>
     </nav>
   </div>
 </template>
@@ -47,30 +47,42 @@
   .nav__button {
     background-color: transparent;
     border-width: 0;
-    color: #fff;
+    color: #ccc;
     cursor: pointer;
-    display: block;
-    float: left;
-    height: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    width: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
 
     &:focus {
       outline: none;
     }
 
     &:hover {
-      background-color: #0074d9;
+      background-color: rgba(255, 255, 255, 0.05);
       color: #fff;
     }
   }
 
-  .nav--success:hover {
-    background-color: #2ecc40;
+  .nav__button--success {
+    color: #2ecc40;
+    
+    &:hover {
+      background-color: rgba(46, 204, 64, 0.15);
+      color: #2ecc40;
+    }
   }
 
-  .nav--danger:hover {
-    background-color: #ff4136;
+  .nav__button--danger {
+    color: #ff4136;
+
+    &:hover {
+      background-color: rgba(255, 65, 54, 0.15);
+      color: #ff4136;
+    }
   }
 </style>
