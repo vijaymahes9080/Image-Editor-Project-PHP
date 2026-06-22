@@ -1,5 +1,7 @@
 # 🎨 Modern Image Editor Project
 
+![Modern Image Editor Banner](assets/editor_banner.png)
+
 > A premium, glassmorphic, and highly interactive multi-image editing application powered by **Vue.js**, **Cropper.js**, and **Webpack**.
 
 [![Vue Version](https://img.shields.io/badge/Vue.js-2.6.x-4fc08d?style=flat-square&logo=vue.js)](https://vuejs.org/)
@@ -10,6 +12,8 @@
 ---
 
 ## ✨ Features
+
+![Multi-Image Workspace Mockup](assets/editor_mockup.png)
 
 Our Modern Image Editor comes packed with professional-grade capabilities:
 
