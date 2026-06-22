@@ -11,7 +11,7 @@
     "url": "https://github.com/vijaymahes9080"
   },
   "scripts": {
-    "build": "webpack --mode production --env.production",
+    "build": "node build.js",
     "clear": "del-cli dist index.html",
     "dev": "webpack-dev-server --mode development --host 0.0.0.0 --useLocalIp --hot --open --overlay",
     "lint": "eslint src *.js --ext .js,.vue --fix",
